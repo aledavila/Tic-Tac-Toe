@@ -1,5 +1,8 @@
+$(function() {
+  alert("Are you ready to play Tic Tac Toe?")
+
 //alert are you ready to play
-// type in names to set as player 1 and 2
+//will highlight who's turn it is
 
 //  possible wins =
 // top 1, top 2, top 3
@@ -31,3 +34,6 @@
 //if player chooses an occupied spot alert player space is taken
 
 //on hover change box color
+
+
+});

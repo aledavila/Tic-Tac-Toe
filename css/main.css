@@ -17,12 +17,24 @@ container {
   text-align: center;
 }
 
-.fa-5x {
-    font-size: 12em;
-}
+  .players {
+    margin: 5% auto;
+    border-left-width: 1px;
+    width: 200px;
+  }
 
-.well {
-  margin: auto;
-  border-left-width: 1px;
-  width: 200px;
-}
+  .fa-5x {
+      font-size: 12em;
+  }
+
+  .btn {
+    margin-top: 2%;
+    font-size: 20px;
+    cursor: help;
+  }
+
+  .instructions {
+    margin: 5% auto;
+    border-left-width: 1px;
+    width: 350px;
+  }

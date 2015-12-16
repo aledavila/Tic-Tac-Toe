@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -29,14 +30,14 @@
     <container>
         <div class="row">
 
-            <section class="col-md-3 players">
-                <div class="well">
-                    Player 1:
-                    Player 2:
+            <section class="col-xs-12 col-md-4">
+                <div class="well players">
+                    <p>Player 1:  X</p>
+                    <p>Player 2:  O</p>
                 </div>
             </section>
 
-            <section class="col-md-6 tictactoe">
+            <section class="col-xs-12 col-md-4 tictactoe">
               <div class="row">
                 <div class="top-row">
                     <i id="top-one" class="fa fa-square fa-5x"></i>
@@ -54,21 +55,29 @@
                     <i id="bottom-three" class="fa fa-square fa-5x"></i>
                 </div>
               </div>
-              <div class="row">
+              <div class="row clear">
                   <button type="button" class="btn btn-primary">New Game</button>
                   <button type="button" class="btn btn-danger">Reset</button>
               </div>
             </section>
 
-            <section class=" col-md-3 instructions">
-
-
+            <section class="col-xs-12 col-md-4">
+                <div class="well instructions">
+                    <p>1. Decide who will be player 1 and who will be player 2.</p>
+                    <p>2. When you are ready to start, player 1 will go first.</p>
+                    <p>3. Player 1 will choose any empty space to put an X in.</p>
+                    <p>4. After player 1 is done player 2 will then choose a place to put O in.</p>
+                    <p>5. Repeat this until someone wins or you run out of spaces to click.</p>
+                    <p>6. Don't worry we will alert you to show you who won!</p>
+                    <p>Happy gaming!</p>
+                </div>
             </section>
 
 
         </div>
     </container>
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 
 </body>
