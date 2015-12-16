@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 7em;
+  font-family: 'Bangers', cursive;
+  color: #2341d3;
+  text-align: center;
+}
+
+container {
+  text-align: center;
+}
+
+.fa-5x {
+    font-size: 12em;
+}
+
+.well {
+  margin: auto;
+  border-left-width: 1px;
+  width: 200px;
+}
