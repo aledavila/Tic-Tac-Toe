@@ -17,24 +17,51 @@ container {
   text-align: center;
 }
 
+  p {
+    font-size: 1.5em;
+  }
+
   .players {
     margin: 5% auto;
     border-left-width: 1px;
     width: 200px;
+    font-size: 2em;
+  }
+
+  .top-row, .middle-row, .bottom-row {
+    margin-bottom: 1em;
+  }
+
+  .box{
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+    margin-left: 1em;
+    display: inline-block;
+    position: relative;
+  }
+
+  i {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: yellow;
   }
 
   .fa-5x {
-      font-size: 12em;
+    font-size: 7em;
   }
 
   .btn {
     margin-top: 2%;
     font-size: 20px;
     cursor: help;
+    margin-left: 1%;
   }
 
   .instructions {
     margin: 5% auto;
     border-left-width: 1px;
     width: 350px;
+    text-align: left;
   }
