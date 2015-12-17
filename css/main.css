@@ -48,6 +48,10 @@ container {
     color: yellow;
   }
 
+  .fa-circle-o {
+    color: #FF495F;
+  }
+
   .fa-5x {
     font-size: 7em;
   }
