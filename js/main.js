@@ -27,8 +27,8 @@ $(function() {
     $(".box").click(function() {
         if (move % 2 === 0) {
             var id = $(this).attr('id');
-            //add value after each click
-            $(this).append("<img class='luke' src='images/luke.png'>");
+            // add value after each click
+            $(this).append("<img src='images/luke.png'>");
             //if player chooses an occupied becomes unclickable
             $(this).css("pointer-events", "none");
             move++;
@@ -41,8 +41,8 @@ $(function() {
             checkTie();
         } else {
             var id = $(this).attr('id');
-            //add value after each click
-            $(this).append("<img class='vader' src='images/darth.png'>");
+            // add value after each click
+            $(this).append("<img src='images/darth.png'>");
             //if player chooses an occupied becomes unclickable
             $(this).css("pointer-events", "none");
             move++;
@@ -60,12 +60,13 @@ $(function() {
         if (player1.includes('top-one') && player1.includes('top-two') && player1.includes('top-three') ||
             player1.includes('middle-one') && player1.includes('middle-two') && player1.includes('middle-three') ||
             player1.includes('bottom-one') && player1.includes('bottom-two') && player1.includes('bottom-three')) {
-            $(".winner-box").text("Darth Vader is the winner!");
+            $(".winner-box").text("Luke I am your father!");
           checkWinner("Darth Vader");
             $(".box").css("pointer-events", "none");
         } else if (player2.includes('top-one') && player2.includes('top-two') && player2.includes('top-three') ||
             player2.includes('middle-one') && player2.includes('middle-two') && player2.includes('middle-three') ||
             player2.includes('bottom-one') && player2.includes('bottom-two') && player2.includes('bottom-three')) {
+            $(".winner-box").text("Who's the father now b**ch");
             checkWinner("Luke Skywalker");
             $(".box").css("pointer-events", "none");
         }
@@ -75,12 +76,13 @@ $(function() {
         if (player1.includes('top-one') && player1.includes('middle-one') && player1.includes('bottom-one') ||
             player1.includes('top-two') && player1.includes('middle-two') && player1.includes('bottom-two') ||
             player1.includes('top-three') && player1.includes('middle-three') && player1.includes('bottom-three')) {
-            $(".winner-box").text("Darth Vader is the winner!");
+            $(".winner-box").text("Luke I am your father!");
             checkWinner("Darth Vader");
             $(".box").css("pointer-events", "none");
         } else if (player2.includes('top-one') && player2.includes('middle-one') && player2.includes('bottom-one') ||
             player2.includes('top-two') && player2.includes('middle-two') && player2.includes('bottom-two') ||
             player2.includes('top-three') && player2.includes('middle-three') && player2.includes("bottom-three")) {
+            $(".winner-box").text("Who's the father now b**ch");
             checkWinner("Luke Skywalker");
             $(".box").css("pointer-events", "none");
         }
@@ -89,11 +91,12 @@ $(function() {
     function diagonal() {
         if (player1.includes('top-one') && player1.includes('middle-two') && player1.includes('bottom-three') ||
             player1.includes('top-three') && player1.includes('middle-two') && player1.includes('bottom-one')) {
-            $(".winner-box").text("Darth Vader is the winner!");
+            $(".winner-box").text("Luke I am your father!");
             checkWinner("Darth Vader");
             $(".box").css("pointer-events", "none");
         } else if (player2.includes('top-one') && player2.includes('middle-two') && player2.includes('bottom-three') ||
             player2.includes('top-three') && player2.includes('middle-two') && player2.includes('bottom-one')) {
+            $(".winner-box").text("Who's the father now b**ch");
             checkWinner("Luke Skywalker");
             $(".box").css("pointer-events", "none");
         }
@@ -117,27 +120,6 @@ $(function() {
         location.reload();
     });
 
-    //on hover change box color
-
-
 });
 
 
-// function playerMove(symbol, moveArray, playerClass, el) {
-//   var offPlayerClass = (playerClass === 'player1') ? 'player2' : 'player1';
-//   var id = $(this).attr('id');
-//   console.log(id);
-// //add value after each click
-//   $(this).append("<i class='fa "+ symbol +" fa-5x'></i>");
-//   console.log(id);
-// //if player chooses an occupied becomes unclickable
-//   $(this).css("pointer-events", "none");
-//   move++;
-//   moveArray.push(id);
-//   console.log(moveArray);
-//   $("."+offPlayerClass).addClass('yellow');
-//   $("."+playerClass).removeClass('yellow');
-//   row();
-//   column();
-//   diagonal;
-// }
