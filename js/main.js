@@ -20,8 +20,8 @@ $(function() {
             move++;
             player2.push(id);
             console.log(player2);
-            $(".player1").addClass('yellow');
-            $(".player2").removeClass('yellow');
+            $(".player1").addClass('red');
+            $(".player2").removeClass('green');
             row();
             column();
             diagonal();
@@ -36,8 +36,8 @@ $(function() {
             move++;
             player1.push(id);
             console.log(player1);
-            $(".player2").addClass('yellow');
-            $(".player1").removeClass('yellow');
+            $(".player2").addClass('green');
+            $(".player1").removeClass('red');
             row();
             column();
             diagonal();
@@ -117,32 +117,10 @@ $(function() {
       alert("tie");
     }
   }
-  // function draw() {
-  //   if(move >= 9 && )
-  // }
 
-  //   // function getWinner() {
-    //     if (winnerIsX()) {
-    //         alert("Winner is Player 1!");
-    //     }
-    //     else if (winnerIsO()) {
-    //         alert("Winner is Player 2!");
-    //     }
-    //     else {
-    //         alert("Cat's Game");
-    //     }
-    // }
 
-    //on click of new game:
     //clear the board
-    //and alert player of new game
-    // $(".btn-primary").on("click", function() {
-    //     location.reload();
-    // });
-
-    //on reset:
-    //reset game and prompt players to enter name
-    $(".btn-danger").on("click", function() {
+    $(".btn-primary").on("click", function() {
         location.reload();
     });
 
@@ -150,5 +128,16 @@ $(function() {
 
 
 });
+
+
+
+//at start put starwars theme song for 10 seconds and disable
+//when vader turn put vader sound effect
+//jedi sound effect off
+//when jedi turn put jedi sound on
+//vader sound off
+//if vader wins - luke i am your father
+//if luke wins -
+//tie - you are not a jedi yet
 
 
