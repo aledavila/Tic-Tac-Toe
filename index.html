@@ -4,12 +4,8 @@
 <head>
 
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-    <!-- Latest compiled and minified CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -30,15 +26,15 @@
     <container>
         <div class="row">
 
-            <section class="col-xs-12 col-md-4">
+            <section class="col-xs-12 col-sm-4 col-md-3">
                 <div class="well players">
-                    <p>Player 1:  X</p>
-                    <p>Player 2:  O</p>
+                    <p class="player1 yellow">Player 1:  X</p>
+                    <p class="player2">Player 2:  O</p>
                 </div>
             </section>
 
-            <section class="col-xs-12 col-md-4 tictactoe">
-              <div class="row">
+            <section class="col-xs-12 col-sm-8 col-md-6">
+              <div class="row tictactoe">
                 <div class="top-row">
                     <div class="box" id="top-one"></div>
                     <div class="box" id="top-two"></div>
@@ -61,7 +57,7 @@
               </div>
             </section>
 
-            <section class="col-xs-12 col-md-4">
+            <section class="col-xs-12 col-sm-12 col-md-3">
                 <div class="well instructions">
                     <p>1. Decide who will be player 1 and who will be player 2.</p>
                     <p>2. When you are ready to start, player 1 will go first.</p>

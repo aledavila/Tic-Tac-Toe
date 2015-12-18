@@ -9,7 +9,7 @@ body {
 h1 {
   font-size: 7em;
   font-family: 'Bangers', cursive;
-  color: #2341d3;
+  color: #30375E;
   text-align: center;
 }
 
@@ -19,6 +19,7 @@ container {
 
   p {
     font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .players {
@@ -26,6 +27,11 @@ container {
     border-left-width: 1px;
     width: 200px;
     font-size: 2em;
+    background-color: #325bc1;
+  }
+
+  .yellow {
+    color: yellow;
   }
 
   .top-row, .middle-row, .bottom-row {
@@ -49,7 +55,7 @@ container {
   }
 
   .fa-circle-o {
-    color: #FF495F;
+    color: #EF233C;
   }
 
   .fa-5x {
@@ -68,4 +74,5 @@ container {
     border-left-width: 1px;
     width: 350px;
     text-align: left;
+    background-color: #325bc1;
   }
