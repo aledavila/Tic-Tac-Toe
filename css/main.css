@@ -2,36 +2,201 @@
   box-sizing: border-box;
 }
 
+/* Start http://www.cursors-4u.com */
+body, a:hover {
+  cursor: url(http://cur.cursors-4u.net/others/oth-1/oth24.cur), progress !important;
+}
+/* End http://www.cursors-4u.com */
+
 body {
   font-size: 12px;
+  background-color: black;
+  color: white;
 }
 
-h1 {
-  font-size: 7em;
-  font-family: 'Bangers', cursive;
-  color: #30375E;
+.page-header {
+  height: 250px;
+  background: url("https://media.giphy.com/media/WjMsm8C9HgO2I/giphy-facebook_s.jpg");
+}
+
+/*star wars logo*/
+.star {
+  position: absolute;
+  top: 4.5%;
+  right: 40%;
+  z-index: 5;
+animation: star 10s ease-out;
+}
+.wars {
+  position: absolute;
+  top: 17%;
+  right: 40%;
+  z-index: 5;
+  animation: wars 10s ease-out;
+}
+.byline{
+  position: absolute;
+  top: 11%;
+  right: 41%;
+  z-index: 5;
+  font-family: 'Montserrat', sans-serif;
+  animation: move-byline 10s linear;
+  letter-spacing: 0.4em;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.byline span {
+  animation: spin-letters 10s linear;
+}
+
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes wars {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes spin-letters {
+  0%, 10% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  70%, 86% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+/*star wars logo end*/
+
+/*star wars text scroll start*/
+#titles
+{
+  position: absolute;
+  width: 18em;
+  height: 50em;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9em;
+  font-size: 350%;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(25deg);
+  z-index: 5;
+}
+
+#titles:after
+{
+  position: absolute;
+  content: ' ';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+#titlecontent
+{
+  position: absolute;
+  top: 100%;
+  animation: scroll 30s linear 0s;
+  z-index: 5;
+}
+
+@keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -170%; }
+}
+/*star wars text scroll stop*/
+
+.starwars {
+  width: 500px;
+  height: 300px;
 }
 
 container {
   text-align: center;
 }
 
+  .winner-box {
+    width: 1000px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
   p {
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   .players {
     margin: 5% auto;
     border-left-width: 1px;
-    width: 200px;
+    width: 250px;
     font-size: 2em;
-    background-color: #325bc1;
+    background-color: #FCED00;
+    float: right;
   }
 
-  .yellow {
-    color: yellow;
+  .red {
+    color: #DD1C1A;
+  }
+
+  .green {
+    color: #39dd41;
+  }
+
+  .btn {
+    margin-top: 2%;
+    font-size: 20px;
+    cursor: help;
+    float: right;
   }
 
   .top-row, .middle-row, .bottom-row {
@@ -47,32 +212,14 @@ container {
     position: relative;
   }
 
-  i {
+  .box:hover {
+    background-color:#414141;
+  }
+
+  div img {
     position: absolute;
     top: 30px;
     right: 40px;
     color: yellow;
   }
 
-  .fa-circle-o {
-    color: #EF233C;
-  }
-
-  .fa-5x {
-    font-size: 7em;
-  }
-
-  .btn {
-    margin-top: 2%;
-    font-size: 20px;
-    cursor: help;
-    margin-left: 1%;
-  }
-
-  .instructions {
-    margin: 5% auto;
-    border-left-width: 1px;
-    width: 350px;
-    text-align: left;
-    background-color: #325bc1;
-  }
