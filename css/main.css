@@ -120,7 +120,6 @@ animation: star 10s ease-out;
   overflow: hidden;
   transform-origin: 50% 100%;
   transform: perspective(300px) rotateX(25deg);
-  z-index: 5;
 }
 
 #titles:after
@@ -139,8 +138,7 @@ animation: star 10s ease-out;
 {
   position: absolute;
   top: 100%;
-  animation: scroll 30s linear 0s;
-  z-index: 5;
+  animation: scroll 60s linear 0s;
 }
 
 @keyframes scroll {
