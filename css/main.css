@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-/* Start http://www.cursors-4u.com */
-body, a:hover {
-  cursor: url(http://cur.cursors-4u.net/others/oth-1/oth24.cur), progress !important;
-}
-/* End http://www.cursors-4u.com */
-
 body {
   font-size: 12px;
   background-color: black;
@@ -19,13 +13,17 @@ body {
   background: url("https://media.giphy.com/media/WjMsm8C9HgO2I/giphy-facebook_s.jpg");
 }
 
+.logo {
+  display: none;
+}
+
 /*star wars logo*/
 .star {
   position: absolute;
   top: 4.5%;
   right: 40%;
   z-index: 5;
-animation: star 10s ease-out;
+  animation: star 10s ease-out;
 }
 .wars {
   position: absolute;
@@ -109,10 +107,10 @@ animation: star 10s ease-out;
 #titles
 {
   position: absolute;
-  width: 18em;
-  height: 50em;
+  width: 12em;
+  height: 40em;
   bottom: 0;
-  left: 50%;
+  left: 90%;
   margin-left: -9em;
   font-size: 350%;
   font-weight: bold;
@@ -138,7 +136,7 @@ animation: star 10s ease-out;
 {
   position: absolute;
   top: 100%;
-  animation: scroll 60s linear 0s;
+  animation: scroll 100s linear 0s infinite;
 }
 
 @keyframes scroll {
@@ -194,7 +192,7 @@ container {
     margin-top: 2%;
     font-size: 20px;
     cursor: help;
-    float: right;
+    margin-left: 40%;
   }
 
   .top-row, .middle-row, .bottom-row {
@@ -220,4 +218,5 @@ container {
     right: 40px;
     color: yellow;
   }
+
 

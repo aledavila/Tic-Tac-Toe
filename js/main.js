@@ -23,6 +23,12 @@ $(function() {
     var player1 = [];
     var player2 = [];
     var winner = null;
+    var sw = new Audio("sound/swtheme.wav")
+    var darth = new Audio("sound/yourfather.wav");
+    var luke = new Audio("sound/luke.wav")
+    var lightsaber = new Audio("sound/lightsaber.wav");
+
+    sw.play();
 
     $(".box").click(function() {
         if (move % 2 === 0) {
@@ -61,12 +67,14 @@ $(function() {
             player1.includes('middle-one') && player1.includes('middle-two') && player1.includes('middle-three') ||
             player1.includes('bottom-one') && player1.includes('bottom-two') && player1.includes('bottom-three')) {
             $(".winner-box").text("Luke I am your father!");
-          checkWinner("Darth Vader");
+            darth.play();
+            checkWinner("Darth Vader");
             $(".box").css("pointer-events", "none");
         } else if (player2.includes('top-one') && player2.includes('top-two') && player2.includes('top-three') ||
             player2.includes('middle-one') && player2.includes('middle-two') && player2.includes('middle-three') ||
             player2.includes('bottom-one') && player2.includes('bottom-two') && player2.includes('bottom-three')) {
             $(".winner-box").text("Who's the father now b**ch");
+            luke.play();
             checkWinner("Luke Skywalker");
             $(".box").css("pointer-events", "none");
         }
@@ -77,12 +85,14 @@ $(function() {
             player1.includes('top-two') && player1.includes('middle-two') && player1.includes('bottom-two') ||
             player1.includes('top-three') && player1.includes('middle-three') && player1.includes('bottom-three')) {
             $(".winner-box").text("Luke I am your father!");
+            darth.play();
             checkWinner("Darth Vader");
             $(".box").css("pointer-events", "none");
         } else if (player2.includes('top-one') && player2.includes('middle-one') && player2.includes('bottom-one') ||
             player2.includes('top-two') && player2.includes('middle-two') && player2.includes('bottom-two') ||
             player2.includes('top-three') && player2.includes('middle-three') && player2.includes("bottom-three")) {
             $(".winner-box").text("Who's the father now b**ch");
+            luke.play();
             checkWinner("Luke Skywalker");
             $(".box").css("pointer-events", "none");
         }
@@ -92,11 +102,13 @@ $(function() {
         if (player1.includes('top-one') && player1.includes('middle-two') && player1.includes('bottom-three') ||
             player1.includes('top-three') && player1.includes('middle-two') && player1.includes('bottom-one')) {
             $(".winner-box").text("Luke I am your father!");
+            darth.play();
             checkWinner("Darth Vader");
             $(".box").css("pointer-events", "none");
         } else if (player2.includes('top-one') && player2.includes('middle-two') && player2.includes('bottom-three') ||
             player2.includes('top-three') && player2.includes('middle-two') && player2.includes('bottom-one')) {
             $(".winner-box").text("Who's the father now b**ch");
+            luke.play();
             checkWinner("Luke Skywalker");
             $(".box").css("pointer-events", "none");
         }
@@ -112,6 +124,7 @@ $(function() {
         if (one + two >= 9 && !winner) {
             console.log(winner);
             $(".winner-box").text("Luke the force is with you but you are not a Jedi yet!");
+            lightsaber.play();
         }
     }
 
