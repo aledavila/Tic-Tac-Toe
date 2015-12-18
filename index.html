@@ -2,80 +2,66 @@
 <html lang="en">
 
 <head>
-
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
-
     <meta charset="UTF-8">
     <title>Tic-Tac-Toe</title>
-
 </head>
 
 <body>
-
     <header class="page-header">
-        <img class="starwars" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2000px-Star_Wars_Logo.svg.png" alt="starwars">
+        <div class="starwars-demo">
+            <img src="images/star.svg" alt="Star" class="star">
+            <img src="images/wars.svg" alt="Wars" class="wars">
+            <h2 class="byline" id="byline">Tic Tac Toe</h2>
+        </div>
     </header>
-
 
     <container>
         <div class="row">
+            <div class="winner-box"></div>
+        </div>
 
-            <section class="col-xs-12 col-sm-4 col-md-3">
-                <div class="well players">
-                    <p class="player1 red">Darth Vader</p>
-                    <p>v</p>
-                    <p class="player2">Luke Skywalker</p>
+        <div class="row">
+            <section class="col-xs-12 col-sm-4 col-md-4">
+                <div class="row">
+                    <div class="well players">
+                        <p class="player1 red">Darth Vader</p>
+                        <p>v</p>
+                        <p class="player2">Luke Skywalker</p>
+                    </div>
+                </div>
+                <div class="row clear">
+                    <button type="button" class="btn btn-danger">Fight Again</button>
                 </div>
             </section>
-
-            <section class="col-xs-12 col-sm-8 col-md-6">
-              <div class="row tictactoe">
-                <div class="top-row">
-                    <div class="box" id="top-one"></div>
-                    <div class="box" id="top-two"></div>
-                    <div class="box" id="top-three"></div>
-                </div>
-                <div class="middle-row">
-                    <div class="box" id="middle-one"></div>
-                    <div class="box" id="middle-two"></div>
-                    <div class="box" id="middle-three"></div>
-                </div>
-                <div class="bottom-row">
-                    <div class="box" id="bottom-one"></div>
-                    <div class="box" id="bottom-two"></div>
-                    <div class="box" id="bottom-three"></div>
-                </div>
-              </div>
-              <div class="row clear">
-                  <button type="button" class="btn btn-primary">New Game</button>
-              </div>
-            </section>
-
-            <section class="col-xs-12 col-sm-12 col-md-3">
-                <div class="well instructions">
-                    <p>1. Decide who will be player 1 and who will be player 2.</p>
-                    <p>2. When you are ready to start, player 1 will go first.</p>
-                    <p>3. Player 1 will choose any empty space to put an X in.</p>
-                    <p>4. After player 1 is done player 2 will then choose a place to put O in.</p>
-                    <p>5. Repeat this until someone wins or you run out of spaces to click.</p>
-                    <p>6. Don't worry we will alert you to show you who won!</p>
-                    <p>Happy gaming!</p>
+            <section class="col-xs-12 col-sm-8 col-md-8">
+                <div class="tictactoe">
+                    <div class="top-row">
+                        <div class="box" id="top-one"></div>
+                        <div class="box" id="top-two"></div>
+                        <div class="box" id="top-three"></div>
+                    </div>
+                    <div class="middle-row">
+                        <div class="box" id="middle-one"></div>
+                        <div class="box" id="middle-two"></div>
+                        <div class="box" id="middle-three"></div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="box" id="bottom-one"></div>
+                        <div class="box" id="bottom-two"></div>
+                        <div class="box" id="bottom-three"></div>
+                    </div>
                 </div>
             </section>
-
-
         </div>
     </container>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
-
 </body>
 
 </html>
