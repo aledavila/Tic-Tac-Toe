@@ -14,7 +14,7 @@ $(function() {
               // playerMove('fa-circle-o', player2, 'player2', ".box");
             var id = $(this).attr('id');
           //add value after each click
-            $(this).append("<i class='fa fa-circle-o fa-5x'></i>");
+            $(this).append("<img class='luke' src='images/luke.png'>");
           //if player chooses an occupied becomes unclickable
             $(this).css("pointer-events", "none");
             move++;
@@ -30,7 +30,7 @@ $(function() {
               // playerMove('fa-times', player1, 'player1', ".box");
             var id = $(this).attr('id');
           //add value after each click
-            $(this).append("<i class='fa fa-times fa-5x'></i>");
+            $(this).append("<img class='vader' src='images/darth.png'>");
           //if player chooses an occupied becomes unclickable
             $(this).css("pointer-events", "none");
             move++;

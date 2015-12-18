@@ -56,19 +56,11 @@ container {
     position: relative;
   }
 
-  i {
+  div img {
     position: absolute;
     top: 30px;
     right: 40px;
     color: yellow;
-  }
-
-  .fa-circle-o {
-    color: #EF233C;
-  }
-
-  .fa-5x {
-    font-size: 7em;
   }
 
   .btn {
